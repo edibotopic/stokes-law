@@ -12,7 +12,8 @@ In either case, the rate of separation is directly proportional to the size of t
 
 Stoke's Law is commonly used to calculate the average velocity of a population of particles:
 
-![Equation for Stoke's Law](./equation.svg)
+![Equation for Stoke's Law](./img/equation_light.png#gh-light-mode-only)
+![Equation for Stoke's Law](./img/equation_dark.png#gh-dark-mode-only)
 
 The `g` represents gravitational acceleration, which can be substituted with centrifugal acceleration where relevant (e.g., centrifugation, cycloning).
 
