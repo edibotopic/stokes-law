@@ -35,13 +35,13 @@ The model --- more generally --- is a simplification. For example, the particles
 
 ## Roadmap
 
+- [x] Fix flickering issue when using particle colors or strokes
 - [ ] Particle-particle and (better) particle-wall interactions
 - [ ] Formation of separated layers of cream and sediment
 - [ ] More realistic numbers, with an accelerated (default) and real-time (optional) toggle
 - [ ] Additional user-interactions, such as shake, homogenisation and emulsification
 - [ ] Display of statistical data in tabular and/or graphical form (e.g., average velocity, predicted settling time, layer height)
 - [ ] User feedback from sliders showing actual changes
-- [ ] Fix flickering issue when using particle colors or strokes
 - [ ] Improve UI
 
 ```
