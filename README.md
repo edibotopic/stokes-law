@@ -1,7 +1,5 @@
 # Stoke's Law Simulation
 
-Note: this is an experimental branch.
-
 This is a basic simulation of Stoke's Law, which describes the motion of particles in a solvent due to gravity.
 
 The purpose of the simulation is largely pedagogical and aims to provide a visual tool for understanding the equation and the behaviour it describes.

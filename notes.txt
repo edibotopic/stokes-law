@@ -1,0 +1,8 @@
+strange issue with superposition
+of particles.
+
+probably some radius/diameter
+confusion.
+
+fixing this should fix colors
+and stroke problems.
