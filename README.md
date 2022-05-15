@@ -31,11 +31,12 @@ Clicking <kbd>restart</kbd> at any time will reset the simulation and return the
 
 Presently, the numbers used are a bit of a fudge and are designed to exhibit salient changes during a short run-time. Nonetheless, the magnitude of the influence of important parameters is relatively accurate.
 
-The model --- more generally --- is a simplification. For example, the particles do not interact with each other and concentration gradients do not affect separation behaviour.
+The model - more generally - is a simplification. For example, the particles do not interact with each other and concentration gradients do not affect separation behaviour.
 
 ## Roadmap
 
 - [x] Fix flickering issue when using particle colors or strokes
+- [ ] Improve lagging frame-rate on mobile browsers
 - [ ] Particle-particle and (better) particle-wall interactions
 - [ ] Formation of separated layers of cream and sediment
 - [ ] More realistic numbers, with an accelerated (default) and real-time (optional) toggle
