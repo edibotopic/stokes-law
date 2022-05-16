@@ -17,3 +17,9 @@ window.addEventListener("resize", () => {
 document.getElementById("restart").addEventListener("click", () => {
   init();
 })
+
+// let TotalDimens = canvas.width + canvas.height
+// let NumberFromDimens = TotalDimens/10
+
+// 1080+1920 = 3000 => 300 
+// 480+320 = 700 => 70
