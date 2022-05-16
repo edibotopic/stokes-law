@@ -1,0 +1,10 @@
+lag on mobile device,
+could tie particle n
+with # pixels, or give
+user option of changing
+n.
+
+also, the modifiers()
+function probably does
+not need to be called
+every frame?
