@@ -15,7 +15,7 @@ Stoke's Law is commonly used to calculate the average velocity of a population o
 ![Equation for Stoke's Law](./img/equation_light.png#gh-light-mode-only)
 ![Equation for Stoke's Law](./img/equation_dark.png#gh-dark-mode-only)
 
-The `g` represents gravitational acceleration, which can be substituted with centrifugal acceleration where relevant (e.g., centrifugation, cycloning).
+`D` is the diameter of the particle, `ρ_p - ρ_s` represents the difference in density between particle and solvent, while `μ` is the viscosity of the solvent. The `g` represents gravitational acceleration, which can be substituted with centrifugal acceleration where relevant (e.g., centrifugation, cycloning).
 
 Manipulating the variables in this equation is the basis of commercial strategies to both promote separation (centrifugation) and reduce separation (homogenisation).
 
@@ -25,13 +25,21 @@ The simulation is coded using Javascript, with particles rendered using the HTML
 
 Sliders can be used to modify the variables of Stoke's Law and observe the changes in real-time.
 
-Clicking <kbd>restart</kbd> at any time will reset the simulation and return the sliders to their default values. The canvas will resize with your screen but it is a good idea to reset after resizing. 
+Clicking <kbd>restart</kbd> at any time will reset the simulation and return the sliders to their default values. The canvas will resize with your screen but it is a good idea to reset after resizing to fill the screen with particles. 
 
 ## Limitations
+
+### Physics
 
 Presently, the numbers used are a bit of a fudge and are designed to exhibit salient changes during a short run-time. Nonetheless, the magnitude of the influence of important parameters is relatively accurate.
 
 The model - more generally - is a simplification. For example, the particles do not interact with each other and concentration gradients do not affect separation behaviour.
+
+### Code
+
+The code is not currently optimised as well as it could be for mobile browsers, which may cause some lag, especially at high particle velocities. I am currently looking into this.
+
+Lastly, I am not a professional/full-time software developer, so I have not considered every edge case with respect to user browser choice. This is not a priority.
 
 ## Roadmap
 
@@ -44,5 +52,3 @@ The model - more generally - is a simplification. For example, the particles do 
 - [ ] Display of statistical data in tabular and/or graphical form (e.g., average velocity, predicted settling time, layer height)
 - [ ] User feedback from sliders showing actual changes
 - [ ] Improve UI
-
-```
