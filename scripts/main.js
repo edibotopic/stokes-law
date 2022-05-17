@@ -1,5 +1,6 @@
 // Initialisation
 function init() {
+  deviceSize()
   ballArray = [];
   SlidersInit();
   ParticlesInit();
@@ -14,7 +15,7 @@ function update() {
 
   // enumerator()
   
-  for (let i = 0; i < ballArray.length; i++) {
+  for (let i = 0; i < n; i++) {
     ballArray[i].update();
   }
 }

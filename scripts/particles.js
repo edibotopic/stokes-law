@@ -36,13 +36,4 @@ class Ball {
 
 let ball;
 let ballArray;
-let n = 150;
-
-//NOTE: adjust n based on screen size
-// const enumerator = () => {
-// let TotalDimens = canvas.width + canvas.height
-// let NumberFromDimens = TotalDimens/10
-//
-// return n = NumberFromDimens
-// }
-// console.log(n)
+// let n = 150;
