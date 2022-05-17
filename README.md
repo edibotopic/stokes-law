@@ -37,7 +37,7 @@ The model - more generally - is a simplification. For example, the particles do 
 
 ### Code
 
-The code is not currently well optimised as well as it could be for mobile browsers, which may cause some lag, especially at high particle velocities. I am currently looking into this.
+The code is not currently optimised as well as it could be for mobile browsers, which may cause some lag, especially at high particle velocities. I am currently looking into this.
 
 Lastly, I am not a professional/full-time software developer, so I have not considered every edge case with respect to user browser choice. This is not a priority.
 
@@ -52,5 +52,3 @@ Lastly, I am not a professional/full-time software developer, so I have not cons
 - [ ] Display of statistical data in tabular and/or graphical form (e.g., average velocity, predicted settling time, layer height)
 - [ ] User feedback from sliders showing actual changes
 - [ ] Improve UI
-
-```
