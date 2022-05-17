@@ -36,4 +36,4 @@ class Ball {
 
 let ball;
 let ballArray;
-const n = 200;
+// let n = 150;

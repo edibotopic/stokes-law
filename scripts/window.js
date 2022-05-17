@@ -4,16 +4,18 @@ canvas.id = "canvas";
 const body = document.getElementById("body");
 body.appendChild(canvas);
 const c = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = document.documentElement.clientWidth;
+canvas.height = document.documentElement.clientHeight;
+
 
 // Resize
 window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = document.documentElement.clientWidth;
+  canvas.height = document.documentElement.clientHeight;
 })
 
 // Listeners
 document.getElementById("restart").addEventListener("click", () => {
   init();
 })
+
