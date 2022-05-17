@@ -44,7 +44,7 @@ Lastly, I am not a professional/full-time software developer, so I have not cons
 ## Roadmap
 
 - [x] Fix flickering issue when using particle colors or strokes
-- [ ] Improve lagging frame-rate on mobile browsers
+- [x] Improve lagging frame-rate on mobile browsers
 - [ ] Particle-particle and (better) particle-wall interactions
 - [ ] Formation of separated layers of cream and sediment
 - [ ] More realistic numbers, with an accelerated (default) and real-time (optional) toggle
