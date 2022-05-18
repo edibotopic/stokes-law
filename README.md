@@ -1,6 +1,6 @@
 # Stoke's Law Simulation
 
-This is a basic simulation of Stoke's Law, which describes the motion of particles in a solvent due to gravity.
+This is a basic simulation of Stoke's Law, which can be used to describe the motion of particles in a solvent under gravity.
 
 The purpose of the simulation is largely pedagogical and aims to provide a visual tool for understanding the equation and the behaviour it describes.
 
@@ -33,13 +33,11 @@ Clicking <kbd>restart</kbd> at any time will reset the simulation and return the
 
 Presently, the numbers used are a bit of a fudge and are designed to exhibit salient changes during a short run-time. Nonetheless, the magnitude of the influence of important parameters is relatively accurate.
 
-The model - more generally - is a simplification. For example, the particles do not interact with each other and concentration gradients do not affect separation behaviour.
+The model - more generally - is a simplification. For example, the particles do not (currently) interact with each other and concentration gradients do not affect separation behaviour.
 
 ### Code
 
-The code is not currently optimised as well as it could be for mobile browsers, which may cause some lag, especially at high particle velocities. I am currently looking into this.
-
-Lastly, I am not a professional/full-time software developer, so I have not considered every edge case with respect to user browser choice. This is not a priority.
+I am not a professional/full-time software developer, so I have not considered every possible edge case with respect to user browser choice or device limitation. This is not a priority.
 
 ## Roadmap
 
