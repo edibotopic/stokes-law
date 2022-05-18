@@ -50,7 +50,7 @@ const SlidersInit = () => {
 // Set initial properties of particles TODO: move somewhere else
 const ParticlesInit = () => {
   for (let i = 0; i < n; i++) {
-    let r = randomIntFromRange(1, 40);
+    let r = randomIntFromRange(.15, 1);
     let x = randomIntFromRange(r*2, canvas.width - (r*2));
     let y = randomIntFromRange(r*2, canvas.height - (r*2));
     let dx = randomIntFromRange(-2, 2) / 30;

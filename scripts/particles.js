@@ -5,6 +5,7 @@ class Ball {
     this.y = y;
     this.dx = dx;
     this.dy = dy;
+    this.base_r = r;
     this.r = r;
     this.color = color;
   }
