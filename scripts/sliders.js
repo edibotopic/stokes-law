@@ -40,19 +40,22 @@ panel.innerHTML = sliders;
 
 // Ensure default values for sliders
 const slidersInit = () => {
-  document.getElementById("slide-radius").value = 20;
+  document.getElementById("slide-radius").value = 15;
   document.getElementById("slide-rhoP").value = 1.05;
   document.getElementById("slide-rhoS").value = 1.00;
   document.getElementById("slide-Gforce").value = 1.00;
   document.getElementById("slide-visc").value = 10;
 }
 
-// Set initial properties of particles TODO: move somewhere else
+
+
+// Set initial properties of particles
 const particlesInit = () => {
   for (let i = 0; i < n; i++) {
-    let r = randomNoFromRange(.15, 1);
-    let x = randomNoFromRange(r*2, canvas.width - (r*2));
-    let y = randomNoFromRange(r*2, canvas.height - (r*2));
+    let r = randomNoFromRange(0.15, 1.0);
+    const padding = r*document.getElementById("slide-radius").value;
+    let x = randomNoFromRange(padding, canvas.width - (padding));
+    let y = randomNoFromRange(padding, canvas.height - (padding));
     let dx = randomNoFromRange(-2, 2) / 30;
     let dy = ((((r * 2) ** 2) * (rhoP - rhoS) * g) / (emp * mu));
     let color = randomColor(colors);
