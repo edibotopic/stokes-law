@@ -47,8 +47,6 @@ const slidersInit = () => {
   document.getElementById("slide-visc").value = 10;
 }
 
-
-
 // Set initial properties of particles
 const particlesInit = () => {
   for (let i = 0; i < n; i++) {
