@@ -7,14 +7,13 @@ modifiers = () => {
     let newGforce = document.getElementById("slide-Gforce").value;
     let newVisc = document.getElementById("slide-visc").value;
     
-    ball.r = Math.abs(ball.r - newRadius); //Note: hack!!!
+    ball.r = Math.abs(ball.base_r * newRadius);
     
     rhoP = newRhoP;
     rhoS = newRhoS;
     mu = newVisc;
     
     ball.dy = ((((ball.r * 2) ** 2) * (rhoP - rhoS) * (g * newGforce)) / (emp * mu));
-    
   }
   )
   
