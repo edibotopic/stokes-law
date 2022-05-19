@@ -2,8 +2,8 @@
 function init() {
   deviceSize()
   ballArray = [];
-  SlidersInit();
-  ParticlesInit();
+  slidersInit();
+  particlesInit();
 }
 
 // Animation

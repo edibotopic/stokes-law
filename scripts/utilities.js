@@ -1,5 +1,4 @@
-// utility functions TODO: move to utilities.js
-function randomIntFromRange(min, max) {
+function randomNoFromRange(min, max) {
   return Math.random() * (max - min + 1) + min;
 }
 
