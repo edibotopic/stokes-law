@@ -15,7 +15,7 @@ Stoke's Law is commonly used to calculate the average velocity of a population o
 ![Equation for Stoke's Law](./img/equation_light.png#gh-light-mode-only)
 ![Equation for Stoke's Law](./img/equation_dark.png#gh-dark-mode-only)
 
-`D` is the diameter of the particle, `ρ_p - ρ_s` represents the difference in density between particle and solvent, while `μ` is the viscosity of the solvent. The `g` represents gravitational acceleration, which can be substituted with centrifugal acceleration where relevant (e.g., centrifugation, cycloning).
+$D$ is the diameter of the particle, $ρ_p - ρ_s$ represents the difference in density between particle and solvent, while $μ$ is the viscosity of the solvent. The $g$ represents gravitational acceleration, which can be substituted with centrifugal acceleration where relevant (e.g., centrifugation, cycloning).
 
 Manipulating the variables in this equation is the basis of commercial strategies to both promote separation (centrifugation) and reduce separation (homogenisation).
 
