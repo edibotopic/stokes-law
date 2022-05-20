@@ -1,6 +1,5 @@
-// utility functions TODO: move to utilities.js
-function randomIntFromRange(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min)
+function randomNoFromRange(min, max) {
+  return Math.random() * (max - min + 1) + min;
 }
 
 function randomColor(colors) {
