@@ -30,6 +30,7 @@ const sliders =
 
   <div class="item">
     <button title="Restart animation" id="restart">Restart</button>
+    <button title="What is this?" id="info" onclick=window.open("https://github.com/edibotopic/stokes-law")>Principle</button>
   </div> 
 
  </div> 
