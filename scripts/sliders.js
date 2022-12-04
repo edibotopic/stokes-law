@@ -1,6 +1,5 @@
 const sliders =
   `<div id="sliders">
-  <h1><a href="https://www.github.com/edibotopic/stokes-law">Stoke's Law</a></h1>
   <div class="items">
     <div class="item">
     <p>Particle Diameter</p>
