@@ -3,33 +3,33 @@ const sliders =
   <div class="items">
     <div class="item">
     <p>Particle Diameter</p>
-    <input id="slide-radius" type="range" min="1" max="40" value="1" step="1">
+    <input title="Adjust diameter" id="slide-radius" type="range" min="1" max="40" value="1" step="1">
   </div> 
 
   <div class="item">
     <p>Particle Density</p>
-    <input id="slide-rhoP" type="range" min="0.5" max="1.8" value="1.05" step="0.05" class="slider" id="myRange">
+    <input title="Adjust particle density" id="slide-rhoP" type="range" min="0.5" max="1.8" value="1.05" step="0.05" class="slider" id="myRange">
   </div> 
 
   <div class="item">
     <p>Solvent Density</p>
-    <input id="slide-rhoS" type="range" min="0.5" max="1.8" value="1.00" step="0.05">
+    <input title="Adjust solvent density" id="slide-rhoS" type="range" min="0.5" max="1.8" value="1.00" step="0.05">
   </div> 
 
   <div class="item">
     <p>Centrifugal Force</p>
-    <input id="slide-Gforce" type="range" min="1" max="50" value="1.00" step="1.00" class="slider">
+    <input title="Apply centrifugal force" id="slide-Gforce" type="range" min="1" max="50" value="1.00" step="1.00" class="slider">
   </div>
 
   <div class="item">
     <p>Solvent Viscosity</p>
-    <input id="slide-visc" type="range" min="1" max="100" value="50" step="1">
+    <input title="Adjust solvent viscosity" id="slide-visc" type="range" min="1" max="100" value="50" step="1">
   </div> 
 
 <hr>
 
   <div class="item">
-    <button id="restart">Restart</button>
+    <button title="Restart animation" id="restart">Restart</button>
   </div> 
 
  </div> 
