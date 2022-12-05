@@ -12,6 +12,10 @@ h1 {
    font-size: 4.4vh;
 }
 
+hr {
+    color: rgba(1,1,1,0.1)
+}
+
 a:link { color: black; }
 a:visited { color: black; }
 a:hover { color: violet; }
@@ -55,7 +59,7 @@ input[type=range] {
 }
 
 #panel {
-    background-color: rgba(247, 247, 247, 0.13);
+    background-color: rgba(247, 247, 247, 0);
     z-index: 2;
     width: fit-content;
     height: fit-content;
@@ -78,8 +82,8 @@ input[type=range] {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
-  padding-top: 100px;
+  z-index: 3;
+  padding-top: 34vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -91,11 +95,13 @@ input[type=range] {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12pt;
+  background-color: rgba(220,100,150,0.80);
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border: 2px solid #888;
+  width: 50vw;
 }
 
 /* Close Button */
@@ -111,4 +117,19 @@ input[type=range] {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.deblur{
+  animation: deblur 4s normal 1;
+  animation-fill-mode: forward;
+  animation-play-state: paused;
+}
+
+.deblur:hover {
+  animation-play-state: running;
+}
+
+@keyframes deblur {
+  0%  {filter: blur(4px); }
+  100%  {filter: blur(0px); }
 }
