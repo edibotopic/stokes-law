@@ -13,6 +13,7 @@ modifiers = () => {
     rhoS = newRhoS;
     mu = newVisc;
     
+    //velocity along the vertical (dy) axis for each particle instance is determined by Stoke's law
     ball.dy = ((((ball.r * 2) ** 2) * (rhoP - rhoS) * (g * newGforce)) / (emp * mu));
   }
   )

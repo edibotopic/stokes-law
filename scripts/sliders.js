@@ -1,3 +1,4 @@
+// Create panel of sliders and buttons
 const sliders =
   `<div id="sliders">
   <div class="items">
@@ -39,7 +40,7 @@ const sliders =
 
 panel.innerHTML = sliders;
 
-// Ensure default values for sliders
+// Ensure default values for sliders (NOTE: arbitrary values set for "user feel")
 const slidersInit = () => {
   document.getElementById("slide-radius").value = 15;
   document.getElementById("slide-rhoP").value = 1.05;
@@ -48,16 +49,16 @@ const slidersInit = () => {
   document.getElementById("slide-visc").value = 10;
 }
 
-// Set initial properties of particles
+// Set initial properties of random particles for device of size n 
 const particlesInit = () => {
   for (let i = 0; i < n; i++) {
     let r = randomNoFromRange(0.15, 1.0);
     const padding = r*document.getElementById("slide-radius").value;
     let x = randomNoFromRange(padding, canvas.width - (padding));
     let y = randomNoFromRange(padding, canvas.height - (padding));
-    let dx = randomNoFromRange(-2, 2) / 30;
-    let dy = ((((r * 2) ** 2) * (rhoP - rhoS) * g) / (emp * mu));
-    let color = randomColor(colors);
+    let dx = randomNoFromRange(-2, 2) / 30; //particles drift slightly on x-axis (NOTE: could be improved with random walk)
+    let dy = ((((r * 2) ** 2) * (rhoP - rhoS) * g) / (emp * mu)); //velocity along vertical axis determined by Stoke's Law
+    let color = randomColor(colors); //colours of balls vary slightly to give illusion of depth
 
     ballArray.push(new Ball(x, y, dx, dy, r, color));
   }
