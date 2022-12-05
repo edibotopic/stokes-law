@@ -7,11 +7,6 @@ html, body {
     display: block;
 }
 
-h1 {
-   font-family: 'Helvetica', sans-serif;
-   font-size: 4.4vh;
-}
-
 hr {
     color: rgba(1,1,1,0.1)
 }
