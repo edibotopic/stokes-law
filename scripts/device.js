@@ -1,13 +1,14 @@
-// Get window dimensions from device
-let n;
-let packing = 20;
+// Total particles should be based on device size and thinned to reduce noise and increase performance
+let total;
+let thinning = 20;
 
-// Check device size, update max particle population size (n) ensuring value is even and divided by packing value
+// Check device size, update particle population size (total) ensuring value is even and divided by thinning value
 const deviceSize = () => {
-    onlyEven = Math.round((document.documentElement.clientWidth + document.documentElement.clientHeight)/packing);
-    
+    onlyEven = Math.round((document.documentElement.clientWidth + document.documentElement.clientHeight) / thinning);
+
     if (onlyEven % 2 == 0) {
-        n = onlyEven;
-    } else {n = onlyEven + 1;
+        total = onlyEven;
+    } else {
+        total = onlyEven + 1;
     }
 }

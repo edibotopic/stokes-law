@@ -1,4 +1,4 @@
-// Canvas
+// Create a resizable and restartable canvas for the animation
 const canvas = document.createElement("canvas");
 canvas.id = "canvas";
 const body = document.getElementById("body");
@@ -9,12 +9,11 @@ canvas.height = document.documentElement.clientHeight;
 
 // Resize
 window.addEventListener("resize", () => {
-  canvas.width = document.documentElement.clientWidth;
-  canvas.height = document.documentElement.clientHeight;
+    canvas.width = document.documentElement.clientWidth;
+    canvas.height = document.documentElement.clientHeight;
 })
 
 // Listeners
 document.getElementById("restart").addEventListener("click", () => {
-  init();
+    init();
 })
-

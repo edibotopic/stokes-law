@@ -1,6 +1,6 @@
 // Create panel of sliders and buttons
 const sliders =
-  `<div id="sliders">
+    `<div id="sliders">
   <div class="items">
     <div class="item">
     <p>Particle Diameter</p>
@@ -42,25 +42,24 @@ panel.innerHTML = sliders;
 
 // Ensure default values for sliders (NOTE: arbitrary values set for "user feel")
 const slidersInit = () => {
-  document.getElementById("slide-radius").value = 15;
-  document.getElementById("slide-rhoP").value = 1.05;
-  document.getElementById("slide-rhoS").value = 1.00;
-  document.getElementById("slide-Gforce").value = 1.00;
-  document.getElementById("slide-visc").value = 10;
+    document.getElementById("slide-radius").value = DEFAULT_RADIUS;
+    document.getElementById("slide-rhoP").value = DEFAULT_RHO_P;
+    document.getElementById("slide-rhoS").value = DEFAULT_RHO_S;
+    document.getElementById("slide-Gforce").value = DEFAULT_GFORCE;
+    document.getElementById("slide-visc").value = DEFAULT_VISCOSITY;
 }
 
-// Set initial properties of random particles for device of size n 
+// Set initial properties of random particles with total number determined by device
 const particlesInit = () => {
-  for (let i = 0; i < n; i++) {
-    let r = randomNoFromRange(0.15, 1.0);
-    const padding = r*document.getElementById("slide-radius").value;
-    let x = randomNoFromRange(padding, canvas.width - (padding));
-    let y = randomNoFromRange(padding, canvas.height - (padding));
-    let dx = randomNoFromRange(-2, 2) / 30; //particles drift slightly on x-axis (NOTE: could be improved with random walk)
-    let dy = ((((r * 2) ** 2) * (rhoP - rhoS) * g) / (emp * mu)); //velocity along vertical axis determined by Stoke's Law
-    let color = randomColor(colors); //colours of balls vary slightly to give illusion of depth
+    for (let i = 0; i < total; i++) {
+        let r = randomNoFromRange(0.15, 1.0);
+        const padding = r * document.getElementById("slide-radius").value;
+        let x = randomNoFromRange(padding, canvas.width - (padding));
+        let y = randomNoFromRange(padding, canvas.height - (padding));
+        let dx = randomNoFromRange(-2, 2) / 30; //particles drift slightly on x-axis (NOTE: could be improved with random walk)
+        let dy = ((((r * 2) ** 2) * (rhoP - rhoS) * g) / (emp * mu)); //velocity along vertical axis determined by Stoke's Law
+        let color = randomColor(COLOURS_PARTS); //colours of balls vary slightly to give illusion of depth
 
-    ballArray.push(new Ball(x, y, dx, dy, r, color));
-  }
+        ballArray.push(new Ball(x, y, dx, dy, r, color));
+    }
 }
-

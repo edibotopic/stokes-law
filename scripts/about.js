@@ -1,5 +1,6 @@
+// A modal window for explaining the application
 const aboutContent =
-`
+    `
 <div class="modal-content">
     <span class="close">&times;</span>
 <p>A <strong>dispersion</strong> consists of particles with <strong>diameter</strong> <i>D</i> suspended in a solvent with <strong>viscosity</strong> <i>&#956;</i>.</p>
@@ -12,23 +13,23 @@ const aboutContent =
 </div>
 `
 
-let modal = document.getElementById("modal");
+const modal = document.getElementById("modal");
 
 modal.innerHTML = aboutContent;
 
-let btn = document.getElementById("about");
-let span = document.getElementsByClassName("close")[0];
+const btn = document.getElementById("about");
+const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = () => {
-  modal.style.display = "block";
+    modal.style.display = "block";
 }
 
 span.onclick = () => {
-  modal.style.display = "none";
+    modal.style.display = "none";
 }
 
 window.onclick = (event) => {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

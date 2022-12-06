@@ -1,6 +1,3 @@
 - Add meta tags for SEO
 - Add a favicon
 - Update readme.md
-- Consider better About page (modal?)
-- PWA support
-- Add icons for buttons
