@@ -10,7 +10,7 @@ function init() {
 function update() {
   window.requestAnimationFrame(update);
   
-  c.fillStyle = 'rgba(101,104,220)';
+  c.fillStyle = COLOUR_BG;
   c.fillRect(0, 0, canvas.width, canvas.height);
  
   for (let i = 0; i < total; i++) {
