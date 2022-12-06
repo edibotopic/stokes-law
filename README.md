@@ -63,3 +63,7 @@ As of 1.0.0 the application is considered feature-complete.
 Beyond that, I will mainly be focusing on minor bug fixes and quality-of-life improvements and do not foresee major changes.
 
 If you have any suggestions please file an *issue*, raise a *pull request* or send me an email at edibotopic@gmail.com. 
+
+### To-do
+
+- [ ] Improve readability of modal on phones
