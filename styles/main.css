@@ -6,6 +6,7 @@ body {
   border: 0px;
   overflow: hidden;
   display: block;
+  font-family: 'Helvetica', sans-serif;
 }
 
 hr {
@@ -14,6 +15,7 @@ hr {
 
 a:link {
   color: black;
+  transition-duration: 1s;
 }
 a:visited {
   color: black;
@@ -26,9 +28,27 @@ a:active {
 }
 
 button {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 12pt;
-  padding: 2px;
+  font-size: 40px;
+  width: 48px;
+  padding: 4px;
+  margin-right: 8px;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 5px;
+  background-color: rgba(200,230,300,0.90);
+  transition-duration: 1s;
+  text-decoration: none;
+}
+
+button:hover {
+  font-size: 40px;
+  width: 48px;
+  padding: 4px;
+  margin-right: 8px;
+  border-radius: 8px;
+  background-color: rgba(300,300,300,0.90);
+  text-decoration: none;
 }
 
 input[type='range'] {
@@ -36,7 +56,6 @@ input[type='range'] {
 }
 
 #sliders {
-  font-family: 'Helvetica', sans-serif;
   font-size: 12pt;
   font-weight: bold;
   text-align: center;
@@ -93,13 +112,13 @@ input[type='range'] {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color .5s ease-in;
 }
 
 /* Modal Content */
 .modal-content {
-  font-family: 'Helvetica', sans-serif;
   font-size: 12pt;
-  background-color: rgba(220, 100, 150, 0.8);
+  background-color: rgba(220, 100, 150, 0.92);
   margin: auto;
   padding: 20px;
   border: 2px solid rgba(250, 250, 250, 0.5);
