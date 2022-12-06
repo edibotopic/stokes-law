@@ -66,4 +66,4 @@ If you have any suggestions please file an *issue*, raise a *pull request* or se
 
 ### To-do
 
-- [ ] Improve readability of modal on phones
+- [x] Improve readability of modal on phones
