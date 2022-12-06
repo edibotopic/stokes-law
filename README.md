@@ -38,13 +38,13 @@ The application is deliberately minimal and simple so that students can interact
 The code is made available under an MIT license and educators are free to copy and modify the code themselves.
 
 As the application is served as a single `index.html` page it can be easily embedded as an iframe in web-based notes and slides, in addition to Learning Management Systems like Canvas.
-It can also be downloaded onto your device and run locally by opening `index.html` (insider the `stokes-law` folder) in a browser.
+It can also be downloaded onto your device and run locally by opening `index.html` (inside the `stokes-law` folder) in a browser.
 
 ## Limitations
 
 The simulation is deliberately more *qualitative* than quantitative.
 Its purpose is to improve the intuition or "feel" of students for the physical relationships involved rather than provide a predictive method.
-In this way, it resembles the early stages of a scientific experiment in which the scientist roughly adjusts some key parameters and forms a loose model of the phenomenon.
+In this way, it resembles the early stages of a scientific experiment in which the scientist roughly adjusts some key parameters and forms a loose model of the phenomenon under study.
 
 ## Release Notes
 
