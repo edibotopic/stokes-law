@@ -1,12 +1,12 @@
 :root {
   --outlines: rgba(0,0,0,1);
   --white_bright: rgba(250,250,250,1);
-  --white_fade: rgba(1, 1, 1, 0.1);
+  --white_fade: rgba(230, 230, 230, 0.5);
   --blue_fade: rgba(200,230,300,0.90);
   --modal_back: rgba(0, 0, 0, 0.4);
   --modal_front: rgba(220, 100, 150, 0.92);
   --violet: rgba(238, 130, 238, 1.0);
-  --violet_fade: rgba(238, 130, 238, 0.92);
+  --violet_fade: rgba(238, 130, 238, 0.97);
   --invisible: rgba(247, 247, 247, 0.0);
 }
 
@@ -22,7 +22,11 @@ body {
 }
 
 hr {
-  color: var(--white_bright)
+  border: 1px solid var(--white_fade);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 button {
@@ -48,6 +52,7 @@ button:hover {
   border-radius: 8px;
   background-color: var(--white_bright);
   text-decoration: none;
+  cursor: pointer;
 }
 
 input[type=range] {
@@ -118,7 +123,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #sliders .item {
-  padding: 10px;
+  padding: 4px;
   display: inline-block;
 }
 
@@ -149,15 +154,17 @@ input[type=range]::-moz-range-thumb {
 .modal {
   display: none;
   position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
   z-index: 3;
-  padding-top: 26vh;
+  padding-top: 10vh;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: var(--modal_back);
   transition: background-color .5s ease-in;
+  cursor: default;
 }
 
 /* Modal Content */
@@ -167,7 +174,7 @@ input[type=range]::-moz-range-thumb {
   margin: auto;
   padding: 20px;
   border: 2px solid var(--outlines);
-  width: 50vw;
+  width: 60vw;
 }
 
 /* Close Button */
