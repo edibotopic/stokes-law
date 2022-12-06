@@ -7,7 +7,7 @@ const aboutContent =
 <p>Separation occurs if there is a difference between <strong>particle density</strong> (<i>&#961;<sub>p</sub></i>) and <strong>solvent density</strong> (<i>&#961;<sub>s</sub></i>).</p>
 <p>The separation <strong>velocity</strong> <i>v</i> can be defined using Stoke's Law (<i>hover</i> or <i>long-press</i> to reveal):</p>
 <div class="deblur" width="100%">
-<img style="margin-left:auto; margin-right:auto;display:block" src="../img/equation_light.png">
+<img style="margin-left:auto; margin-right:auto;display:block" src="img/equation_light.png">
 </div>
 <p>By adjusting the <strong>sliders</strong> you can re-discover this equation.</p>
 </div>
