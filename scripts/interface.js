@@ -32,7 +32,7 @@ const sliders =
   <div class="item">
     <button title="Restart" id="restart"><i class="fa fa-repeat" aria-hidden="true"></i></button>
     <button title="About" id="about")><i class="fa fa-question" aria-hidden="true"></i></button>
-    <button title="Source" id="source" onclick=window.open("https://github.com/edibotopic/stokes-law")><i class="fa fa-code" aria-hidden="true"></i></button>
+    <button title="Source" id="source" onclick=window.open("https://github.com/edibotopic/stokes-law")><i class="fa fa-book" aria-hidden="true"></i></button>
   </div> 
 
  </div> 
