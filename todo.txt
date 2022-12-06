@@ -1,3 +1,0 @@
-- Add meta tags for SEO
-- Add a favicon
-- Update readme.md
