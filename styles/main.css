@@ -10,7 +10,7 @@ body {
 }
 
 hr {
-  color: rgba(1, 1, 1, 0.1);
+  color: rgb(1, 1, 1, 0.1);
 }
 
 a:link {
@@ -32,6 +32,7 @@ button {
   width: 48px;
   padding: 4px;
   margin-right: 8px;
+  margin-top: 8px;
   border-style: solid;
   border-color: black;
   border-width: 3px;
