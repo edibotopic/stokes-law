@@ -1,3 +1,15 @@
+:root {
+  --outlines: rgba(0,0,0,1);
+  --white_bright: rgba(250,250,250,1);
+  --white_fade: rgba(1, 1, 1, 0.1);
+  --blue_fade: rgba(200,230,300,0.90);
+  --modal_back: rgba(0, 0, 0, 0.4);
+  --modal_front: rgba(220, 100, 150, 0.92);
+  --violet: rgba(238, 130, 238, 1.0);
+  --violet_fade: rgba(238, 130, 238, 0.92);
+  --invisible: rgba(247, 247, 247, 0.0);
+}
+
 html,
 body {
   width: 100%;
@@ -10,21 +22,7 @@ body {
 }
 
 hr {
-  color: rgb(1, 1, 1, 0.1);
-}
-
-a:link {
-  color: black;
-  transition-duration: 1s;
-}
-a:visited {
-  color: black;
-}
-a:hover {
-  color: violet;
-}
-a:active {
-  color: white;
+  color: var(--white_bright)
 }
 
 button {
@@ -34,10 +32,10 @@ button {
   margin-right: 8px;
   margin-top: 8px;
   border-style: solid;
-  border-color: black;
+  border-color: var(--outlines);
   border-width: 3px;
   border-radius: 5px;
-  background-color: rgba(200,230,300,0.90);
+  background-color: var(--blue_fade);
   transition-duration: 1s;
   text-decoration: none;
 }
@@ -48,12 +46,94 @@ button:hover {
   padding: 4px;
   margin-right: 8px;
   border-radius: 8px;
-  background-color: rgba(300,300,300,0.90);
+  background-color: var(--white_bright);
   text-decoration: none;
 }
 
-input[type='range'] {
-  accent-color: hotpink;
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: var(--violet);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: var(--violet);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: var(--violet);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: var(--violet);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: var(--violet);
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: var(--violet);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: var(--violet);
 }
 
 #sliders {
@@ -84,7 +164,7 @@ input[type='range'] {
 }
 
 #panel {
-  background-color: rgba(247, 247, 247, 0);
+  background-color: var(--invisible);
   z-index: 2;
   width: fit-content;
   height: fit-content;
@@ -112,23 +192,23 @@ input[type='range'] {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--modal_back);
   transition: background-color .5s ease-in;
 }
 
 /* Modal Content */
 .modal-content {
   font-size: 12pt;
-  background-color: rgba(220, 100, 150, 0.92);
+  background-color: var(--violet_fade);
   margin: auto;
   padding: 20px;
-  border: 2px solid rgba(250, 250, 250, 0.5);
+  border: 2px solid var(--outlines);
   width: 50vw;
 }
 
 /* Close Button */
 .close {
-  color: rgba(250, 250, 250, 1);
+  color: var(--white_bright);
   float: right;
   font-size: 28px;
   font-weight: bold;
