@@ -15,5 +15,5 @@ window.addEventListener("resize", () => {
 
 // Listeners
 document.getElementById("restart").addEventListener("click", () => {
-    init();
+    reinit();
 })

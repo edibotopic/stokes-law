@@ -1,30 +1,35 @@
-// Create panel of sliders and buttons
+// Create panel of sliders and buttons TODO: alternative to oninput in html tags?
 const sliders =
     `<div id="sliders">
   <div class="items">
     <div class="item">
     <p>Particle Diameter</p>
-    <input title="Adjust diameter" id="slide-radius" type="range" min="1" max="40" value="1" step="1">
+    <input title="Adjust diameter" id="slide-radius" type="range" min="1" max="40" value="1" step="1" oninput="this.nextElementSibling.value = this.value">
+    <output>15</output>
   </div> 
 
   <div class="item">
     <p>Particle Density</p>
-    <input title="Adjust particle density" id="slide-rhoP" type="range" min="0.5" max="1.8" value="1.05" step="0.05" class="slider" id="myRange">
+    <input title="Adjust particle density" id="slide-rhoP" type="range" min="0.5" max="1.8" value="1.05" step="0.05" class="slider" id="myRange"oninput="this.nextElementSibling.value = this.value">
+    <output>1.05</output>
   </div> 
 
   <div class="item">
     <p>Solvent Density</p>
-    <input title="Adjust solvent density" id="slide-rhoS" type="range" min="0.5" max="1.8" value="1.00" step="0.05">
+    <input title="Adjust solvent density" id="slide-rhoS" type="range" min="0.5" max="1.8" value="1.00" step="0.05" oninput="this.nextElementSibling.value = this.value">
+    <output>1.00</output>
   </div> 
 
   <div class="item">
     <p>Centrifugal Force</p>
-    <input title="Apply centrifugal force" id="slide-Gforce" type="range" min="1" max="50" value="1.00" step="1.00" class="slider">
+    <input title="Apply centrifugal force" id="slide-Gforce" type="range" min="1" max="50" value="1.00" step="1.00" class="slider" oninput="this.nextElementSibling.value = this.value">
+    <output>1</output>
   </div>
 
   <div class="item">
     <p>Solvent Viscosity</p>
-    <input title="Adjust solvent viscosity" id="slide-visc" type="range" min="1" max="100" value="50" step="1">
+    <input title="Adjust solvent viscosity" id="slide-visc" type="range" min="1" max="100" value="50" step="1" oninput="this.nextElementSibling.value = this.value">
+    <output>10</output>
   </div> 
 
 <hr>
@@ -61,5 +66,7 @@ const particlesInit = () => {
         let color = randomColor(COLOURS_PARTS); //colours of balls vary slightly to give illusion of depth
 
         ballArray.push(new Ball(x, y, dx, dy, r, color));
+
     }
+    /* console.log(ballArray[2].dy) */
 }

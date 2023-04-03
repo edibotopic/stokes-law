@@ -6,6 +6,13 @@ function init() {
   particlesInit();
 }
 
+// Reinitialise but keep slider values TODO: different button?
+function reinit() {
+  deviceSize()
+  ballArray = [];
+  particlesInit();
+}
+
 // Animation loop
 function update() {
   window.requestAnimationFrame(update);

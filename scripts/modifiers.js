@@ -6,6 +6,7 @@ modifiers = () => {
         let newRhoS = document.getElementById("slide-rhoS").value;
         let newGforce = document.getElementById("slide-Gforce").value;
         let newVisc = document.getElementById("slide-visc").value;
+        let damping = 0.01;
 
         ball.r = Math.abs(ball.base_r * newRadius);
 
@@ -14,7 +15,8 @@ modifiers = () => {
         mu = newVisc;
 
         //velocity along the vertical (dy) axis for each particle instance is determined by Stoke's law
-        ball.dy = ((((ball.r * 2) ** 2) * (rhoP - rhoS) * (g * newGforce)) / (emp * mu));
+        ball.dy = ((((ball.r * 2) ** 2) * (rhoP - rhoS) * (g * newGforce)) / (emp * mu)) * damping;
+
     }
     )
 }
