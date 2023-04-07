@@ -1,13 +1,13 @@
 :root {
-  --outlines: rgba(0,0,0,1);
-  --white_bright: rgba(250,250,250,1);
+  --outlines: rgba(0, 0, 0, 1);
+  --white_bright: rgba(250, 250, 250, 1);
   --white_fade: rgba(230, 230, 230, 0.5);
-  --blue_fade: rgba(200,230,300,0.90);
+  --blue_fade: rgba(200, 230, 300, 0.9);
   --modal_back: rgba(0, 0, 0, 0.4);
   --modal_front: rgba(220, 100, 150, 0.92);
-  --violet: rgba(238, 130, 238, 1.0);
+  --violet: rgba(238, 130, 238, 1);
   --violet_fade: rgba(238, 130, 238, 0.97);
-  --invisible: rgba(247, 247, 247, 0.0);
+  --invisible: rgba(247, 247, 247, 0);
 }
 
 html,
@@ -30,7 +30,7 @@ hr {
 }
 
 button {
-  font-size: 40px;
+  font-size: 30px;
   width: 48px;
   padding: 4px;
   margin-right: 8px;
@@ -45,25 +45,52 @@ button {
 }
 
 button:hover {
-  font-size: 40px;
+  font-size: 30px;
   width: 48px;
   padding: 4px;
   margin-right: 8px;
-  border-radius: 8px;
   background-color: var(--white_bright);
   text-decoration: none;
   cursor: pointer;
 }
 
-input[type=range] {
+#copy {
+  font-size: 20px;
+  width: 35px;
+  padding: 2px;
+  margin-right: 4px;
+  margin-top: 4px;
+  border-style: solid;
+  border-color: var(--outlines);
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: var(--blue_fade);
+  transition-duration: 1s;
+  text-decoration: none;
+  float: right;
+
+}
+
+#copy:hover {
+  font-size: 22px;
+  background-color: var(--white_bright);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#linkFrame {
+    top: 0;
+}
+
+input[type='range'] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%;
 }
-input[type=range]:focus {
+input[type='range']:focus {
   outline: none;
 }
-input[type=range]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
@@ -72,7 +99,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
-input[type=range]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 36px;
@@ -83,10 +110,10 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -14px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type='range']:focus::-webkit-slider-runnable-track {
   background: var(--violet);
 }
-input[type=range]::-moz-range-track {
+input[type='range']::-moz-range-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
@@ -95,7 +122,7 @@ input[type=range]::-moz-range-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
-input[type=range]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 36px;
@@ -127,6 +154,10 @@ input[type=range]::-moz-range-thumb {
   display: inline-block;
 }
 
+#sliders .headers {
+    margin: 0;
+}
+
 #canvas {
   position: absolute;
   z-index: 1;
@@ -156,23 +187,23 @@ input[type=range]::-moz-range-thumb {
   position: fixed;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: 3;
-  padding-top: 10vh;
+  z-index: 5;
+  padding-top: 5vh;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: var(--modal_back);
-  transition: background-color .5s ease-in;
+  transition: background-color 0.5s ease-in;
   cursor: default;
 }
 
 /* Modal Content */
 .modal-content {
-  font-size: 12pt;
+  font-size: 11pt;
   background-color: var(--violet_fade);
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   border: 2px solid var(--outlines);
   width: 60vw;
 }
@@ -209,4 +240,45 @@ input[type=range]::-moz-range-thumb {
   100% {
     filter: blur(0px);
   }
+}
+
+.line {
+    fill: none;
+    stroke: var(--violet);
+    stroke-width: 2.5px;
+}
+
+#logger {
+    width: 140px;
+    height: 150px;
+    left: 10px;
+    bottom: 10px;
+    border: 1px dashed #aaa;
+    background-color: rgba(50, 10, 100, 0.4);
+    position: absolute;
+    z-index: 3;
+}
+
+#stats {
+    width: 160px;
+    height: 75px;
+    right: 5px;
+    bottom: 80px;
+    position: absolute;
+    color: var(--white_bright);
+    font-size: 11px;
+    font-weight: bold;
+    z-index: 4;
+}
+
+pre {
+    padding: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgba(101,104,220);
+}
+
+#codebg {
+    border-radius: 5px;
+    background-color: rgba(250, 250, 250, 0.6)
 }
