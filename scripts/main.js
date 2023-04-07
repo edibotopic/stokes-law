@@ -6,7 +6,7 @@ function init() {
   particlesInit();
 }
 
-// Reinitialise but keep slider values TODO: different button?
+// Reinitialise but keep slider values
 function reinit() {
   deviceSize()
   ballArray = [];
@@ -23,6 +23,7 @@ function update() {
   for (let i = 0; i < total; i++) {
     ballArray[i].update();
   }
+
 }
 
 init();
