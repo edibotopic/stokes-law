@@ -21,8 +21,6 @@ class Ball {
     update() {
         modifiers();
 
-        console.log(avgVel());
-
         if (this.x + this.r + this.dx >
             canvas.width || this.x - this.r < 0) {
             this.dx = -this.dx
