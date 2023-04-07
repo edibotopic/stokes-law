@@ -16,11 +16,9 @@ class Ball {
         c.closePath();
         c.fillStyle = this.colour;
         c.fill();
-        c.stroke();
-    }
+        c.stroke(); }
 
     update() {
-
         modifiers();
 
         if (this.x + this.r + this.dx >
@@ -31,6 +29,7 @@ class Ball {
         this.y += this.dy;
         this.x += this.dx;
 
+        statsPanel();
         this.draw();
     }
 }
