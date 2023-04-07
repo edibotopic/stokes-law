@@ -25,6 +25,10 @@ In food, for example:
 - Homogenisation is used to reduce the size of oil droplets in beverages and thereby decrease their flotation speed
 - Thickeners are added to salad dressings to increase viscosity and slow the sedimentation of herbs and spices
 
+In analytical science, re-arranging the Stoke's Law equation allows for estimation  of particle size or viscosity based on sedimentation data.
+
+A variety of other industrial and scientific examples can be found in the literature.
+
 ## Implementation
 
 The simulation is coded using vanilla JavaScript, with particles rendered using the HTML `<canvas>` element.
@@ -40,13 +44,15 @@ The code is made available under an MIT license and educators are free to copy a
 As the application is served as a single `index.html` page it can be easily embedded as an iframe in web-based notes and slides, in addition to Learning Management Systems like Canvas.
 It can also be downloaded onto your device and run locally by opening `index.html` (inside the `stokes-law` folder) in a browser.
 
-## Limitations
-
-The simulation is deliberately more *qualitative* than quantitative.
-Its purpose is to improve the intuition or "feel" of students for the physical relationships involved rather than provide a predictive method.
-In this way, it resembles the early stages of a scientific experiment in which the scientist roughly adjusts some key parameters and forms a loose model of the phenomenon under study.
-
 ## Release Notes
+
+1.1.0
+
+Statistical output added:
+
+- Graph readout of velocity over time
+- Numerical output of mean velocity, diameter and the density difference
+- Addition of a copy button for embedding in LMS
 
 1.0.0
 
@@ -63,7 +69,3 @@ As of 1.0.0 the application is considered feature-complete.
 Beyond that, I will mainly be focusing on minor bug fixes and quality-of-life improvements and do not foresee major changes.
 
 If you have any suggestions please file an *issue*, raise a *pull request* or send me an email at edibotopic@gmail.com. 
-
-### To-do
-
-- [x] Improve readability of modal on phones
