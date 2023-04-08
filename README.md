@@ -15,6 +15,21 @@ Stoke's Law is commonly used to calculate the average velocity of a population o
 
 $D$ is the diameter of the particle, $ρ_p - ρ_s$ represents the difference in density between particle and solvent, while $μ$ is the viscosity of the solvent. The $g$ represents gravitational acceleration, which can be multiplied by an appropriate g-force when separation in a centrifuge is of interest.
 
+In the application the units for the physical quantities are taken to be:
+
+- Radius ($mm$)
+- Density ($kg/m^{-3}$)
+- Viscosity ($Pa.s$)
+- Velocity ($m/s^{-1}$)
+
+The default centrifugal force is $1$ (no centrifugation) meaning
+that acceleration due to gravity ($1 \times 9.81 m/s^{-2}$) applies.
+Applying a centrifugal force of $2$ will double this value.
+
+Note: the units can be viewed at any time by hovering over the sliders or
+clicking on the variable name (mobile).
+On mobile, clicking anywhere else on the screen after a tooltip appears will remove the tooltip.
+
 ## Practical Significance
 
 Manipulating the physical variables in this equation is the basis of commercial strategies to both promote separation (centrifugation) or reduce separation (homogenisation).
@@ -42,7 +57,7 @@ The application is deliberately minimal and simple so that students can interact
 The code is made available under an MIT license and educators are free to copy and modify the code themselves.
 
 As the application is served as a single `index.html` page it can be easily embedded as an iframe in web-based notes and slides, in addition to Learning Management Systems like Canvas.
-It can also be downloaded onto your device and run locally by opening `index.html` (inside the `stokes-law` folder) in a browser.
+It can also be downloaded onto your device and then run locally by opening `index.html` (inside the `stokes-law` folder) in a browser.
 
 ## Release Notes
 
