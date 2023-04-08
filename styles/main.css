@@ -1,3 +1,4 @@
+/* Some colours */
 :root {
   --outlines: rgba(0, 0, 0, 1);
   --white_bright: rgba(250, 250, 250, 1);
@@ -10,6 +11,7 @@
   --invisible: rgba(247, 247, 247, 0);
 }
 
+/* General layout */
 html,
 body {
   width: 100%;
@@ -21,14 +23,7 @@ body {
   font-family: 'Helvetica', sans-serif;
 }
 
-hr {
-  border: 1px solid var(--white_fade);
-  margin-top: 1px;
-  margin-bottom: 1px;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
+/* Interface buttons */
 button {
   font-size: 30px;
   width: 48px;
@@ -42,7 +37,7 @@ button {
   background-color: var(--blue_fade);
   transition-duration: 1s;
   text-decoration: none;
-    z-index: 10;
+  z-index: 10;
 }
 
 button:hover {
@@ -53,7 +48,7 @@ button:hover {
   background-color: var(--white_bright);
   text-decoration: none;
   cursor: pointer;
-    z-index: 10;
+  z-index: 10;
 }
 
 /* Below is required for tooltips on mobile */
@@ -77,6 +72,7 @@ button:hover {
   }
 }
 
+/* Copy button in About modal */
 #copy {
   font-size: 20px;
   width: 35px;
@@ -91,7 +87,6 @@ button:hover {
   transition-duration: 1s;
   text-decoration: none;
   float: right;
-
 }
 
 #copy:hover {
@@ -101,12 +96,9 @@ button:hover {
   cursor: pointer;
 }
 
-#linkFrame {
-    top: 0;
-}
-
+/* Sliders */
 .item {
-   text-shadow: 0.3px 0.3px whitesmoke;
+  text-shadow: 0.3px 0.3px whitesmoke;
 }
 
 input[type='range'] {
@@ -182,14 +174,16 @@ input[type='range']::-moz-range-thumb {
 }
 
 #sliders .headers {
-    margin: 0;
+  margin: 0;
 }
 
+/* Animation canvas */
 #canvas {
   position: absolute;
   z-index: 1;
 }
 
+/* Container for sliders and buttons */
 #panel {
   background-color: var(--invisible);
   z-index: 2;
@@ -225,7 +219,6 @@ input[type='range']::-moz-range-thumb {
   cursor: default;
 }
 
-/* Modal Content */
 .modal-content {
   font-size: 11pt;
   background-color: var(--violet_fade);
@@ -235,7 +228,6 @@ input[type='range']::-moz-range-thumb {
   width: 60vw;
 }
 
-/* Close Button */
 .close {
   color: var(--white_bright);
   float: right;
@@ -269,44 +261,51 @@ input[type='range']::-moz-range-thumb {
   }
 }
 
+/* Data logging graph */
 .line {
-    fill: none;
-    stroke: var(--violet);
-    stroke-width: 2.5px;
+  fill: none;
+  stroke: var(--violet);
+  stroke-width: 2.5px;
 }
 
 #logger {
-    width: 140px;
-    height: 150px;
-    left: 10px;
-    bottom: 10px;
-    border: 1px dashed #aaa;
-    background-color: rgba(50, 10, 100, 0.4);
-    position: absolute;
-    z-index: 3;
+  width: 140px;
+  height: 150px;
+  left: 10px;
+  bottom: 10px;
+  border: 1px dashed #aaa;
+  background-color: rgba(50, 10, 100, 0.4);
+  position: absolute;
+  z-index: 3;
 }
 
+/* Statistical display */
 #stats {
-    width: 160px;
-    height: 75px;
-    right: 5px;
-    bottom: 80px;
-    position: absolute;
-    color: var(--white_bright);
-    font-size: 11px;
-    font-weight: bold;
-    text-shadow: 1px 1px black;
-    z-index: 4;
+  width: 160px;
+  height: 75px;
+  right: 5px;
+  bottom: 80px;
+  position: absolute;
+  color: var(--white_bright);
+  font-size: 11px;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  z-index: 4;
+}
+
+/* Code block in About modal */
+#linkFrame {
+  top: 0;
 }
 
 pre {
-    padding: 4px;
-    font-size: 10px;
-    font-weight: bold;
-    color: rgba(101,104,220);
+  padding: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(101, 104, 220);
 }
 
 #codebg {
-    border-radius: 5px;
-    background-color: rgba(250, 250, 250, 0.6)
+  border-radius: 5px;
+  background-color: rgba(250, 250, 250, 0.6);
 }

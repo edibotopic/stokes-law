@@ -14,9 +14,7 @@ width="600" height="800"
 title="Stoke's Law Simulation">
 </iframe>`
 
-const aboutContent =
-    `
-<div class="modal-content">
+const aboutContent = ` <div class="modal-content">
 <span class="close">&times;</span>
 <p>A <strong>dispersion</strong> has particles of <strong>diameter</strong> <i>D</i> suspended in a solvent with <strong>viscosity</strong> <i>&#956;</i>.</p>
 <p>Separation is driven by a difference between <strong>particle density</strong> (<i>&#961;<sub>p</sub></i>) and <strong>solvent density</strong> (<i>&#961;<sub>s</sub></i>).</p>
@@ -37,36 +35,36 @@ ${linkEsc}
 </div>
 `
 
-const modal = document.getElementById("modal");
+const modal = document.getElementById('modal')
 
-modal.innerHTML = aboutContent;
+modal.innerHTML = aboutContent
 
-const btn = document.getElementById("about");
-const cpy = document.getElementById("copy");
-const span = document.getElementsByClassName("close")[0];
+const btn = document.getElementById('about')
+const cpy = document.getElementById('copy')
+const span = document.getElementsByClassName('close')[0]
 
 btn.onclick = () => {
-    modal.style.display = "block";
+  modal.style.display = 'block'
 }
 
 span.onclick = () => {
-    modal.style.display = "none";
+  modal.style.display = 'none'
 }
 
 window.onclick = (event) => {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+  if (event.target == modal) {
+    modal.style.display = 'none'
+  }
 }
 
 cpy.onclick = () => {
-  let linkText = linkClean;
-    navigator.clipboard.writeText(linkText);
-    let cpyBtn = document.getElementById("copy");
-    
-    cpyBtn.setAttribute("title", "link copied")
+  let linkText = linkClean
+  navigator.clipboard.writeText(linkText)
+  let cpyBtn = document.getElementById('copy')
 
-    setTimeout(() => {
-        cpyBtn.setAttribute("title", "copy");
-    }, 6000)
+  cpyBtn.setAttribute('title', 'link copied')
+
+  setTimeout(() => {
+    cpyBtn.setAttribute('title', 'copy')
+  }, 6000)
 }

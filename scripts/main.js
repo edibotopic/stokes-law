@@ -1,6 +1,8 @@
+// Main entry point for application
+
 // Initialisation
 function init() {
-  deviceSize()
+  deviceSize();
   ballArray = [];
   slidersInit();
   particlesInit();
@@ -8,7 +10,7 @@ function init() {
 
 // Reinitialise but keep slider values
 function reinit() {
-  deviceSize()
+  deviceSize();
   ballArray = [];
   particlesInit();
 }
@@ -16,14 +18,13 @@ function reinit() {
 // Animation loop
 function update() {
   window.requestAnimationFrame(update);
-  
+
   c.fillStyle = COLOUR_BG;
   c.fillRect(0, 0, canvas.width, canvas.height);
- 
+
   for (let i = 0; i < total; i++) {
     ballArray[i].update();
   }
-
 }
 
 init();

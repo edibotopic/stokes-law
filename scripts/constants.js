@@ -1,6 +1,13 @@
+// Define some useful constants
+
 // Colours
 const COLOUR_BG = 'rgba(101,104,220)';
-const COLOURS_PARTS = ['rgba(306,333,50,0.7)','rgba(206,233,50,0.8)', 'rgba(196,183,50,0.6)', 'rgba(356,213,50,0.9)'];
+const COLOURS_PARTS = [
+  'rgba(306,333,50,0.7)',
+  'rgba(206,233,50,0.8)',
+  'rgba(196,183,50,0.6)',
+  'rgba(356,213,50,0.9)',
+]
 
 // Default physical values for Stoke's Law (NOTE: arbitrary)
 const DEFAULT_RADIUS = 10;
@@ -14,4 +21,4 @@ const DEFAULT_VISCOSITY = 10;
 const EMPIRICAL_CONSTANT = 18;
 
 // Value to slow down visual speed of particles
-const DAMPING = 50000; 
+const DAMPING = 50000;
