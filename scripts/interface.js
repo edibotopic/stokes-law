@@ -29,37 +29,37 @@ const sliders =
       <div class="items">
         <div title="units: mm" class="item" tabindex="0">
         <p class="headers" slider> Particle Radius</p>
-        <input id="slide-radius" type="range" min=${minRad} max=${maxD} value=${valRad} step=${stepRad} oninput="this.nextElementSibling.value = this.value">
+        <input id="slide-radius" type="range" min=${minRad} max=${maxD} value=${valRad} step=${stepRad} oninput="this.nextElementSibling.value = this.value" aria-label="Adjust particle radius with slider">
         <output id="sliderData1">${valRad}</output>
      </div> 
 
       <div title="units: kg/m&#x00B3" class="item" tabindex="0">
         <p class="headers">Particle Density</p>
-        <input id="slide-rhoP" type="range" min=${minRhoP} max=${maxRhoP} value=${valRhoP} step=${stepRhoP} class="slider" oninput="this.nextElementSibling.value = this.value">
+        <input id="slide-rhoP" type="range" min=${minRhoP} max=${maxRhoP} value=${valRhoP} step=${stepRhoP} class="slider" oninput="this.nextElementSibling.value = this.value" aria-label="Adjust particle density with slider">
         <output id="sliderData2">${valRhoP}</output>
       </div> 
 
       <div title="units: kg/m&#x00B3" class="item" tabindex="0">
         <p class="headers">Solvent Density</p>
-        <input id="slide-rhoS" type="range" min=${minRhoS} max=${maxRhoS} value=${valRhoS} step=${stepRhoS} oninput="this.nextElementSibling.value = this.value">
+        <input id="slide-rhoS" type="range" min=${minRhoS} max=${maxRhoS} value=${valRhoS} step=${stepRhoS} oninput="this.nextElementSibling.value = this.value" aria-label="Adjust solvent density with slider">
         <output id="sliderData3">${valRhoS}</output>
       </div> 
 
       <div title="units: none" class="item" tabindex="0">
         <p class="headers">Centrifugal Force</p>
-        <input id="slide-Gforce" type="range" min=${minG} max=${maxG} value=${valG} step=${stepG} class="slider" oninput="this.nextElementSibling.value = this.value">
+        <input id="slide-Gforce" type="range" min=${minG} max=${maxG} value=${valG} step=${stepG} class="slider" oninput="this.nextElementSibling.value = this.value" aria-label="Adjust centrifugal force with slider">
         <output id="sliderData4">${valG}</output>
       </div>
 
       <div title="units: Pa.s" class="item" tabindex="0">
         <p class="headers">Solvent Viscosity</p>
-        <input id="slide-visc" type="range" min=${minMu} max=${maxMu} value=${valMu} step=${stepMu} oninput="this.nextElementSibling.value = this.value">
+        <input id="slide-visc" type="range" min=${minMu} max=${maxMu} value=${valMu} step=${stepMu} oninput="this.nextElementSibling.value = this.value" aria-label="Adjust solvent viscosity with slider">
         <output id="sliderData5">${valMu}</output>
       </div> 
 
     <br>
 
-      <div class="buttons">
+      <div>
         <button title="Reload particles" id="restart"><i class="fa fa-repeat" aria-hidden="true"></i></button>
         <button title="Show data" id="graph"><i class="fa fa-line-chart" aria-hidden="true"></i></button>
         <button title="About the simulation" id="about")><i class="fa fa-question" aria-hidden="true"></i></button>
