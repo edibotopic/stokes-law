@@ -6,7 +6,6 @@ let rhoS = document.getElementById("slide-rhoS").value; // density in kg/m^3
 let g = DEFAULT_GRAVITY; // gravitational acceleration in m/s^2 
 let mu = document.getElementById("slide-visc").value; // viscosity in Pa.s
 let emp = EMPIRICAL_CONSTANT; // empirical constant
-let forceGvalue = document.getElementById("slide-Gforce").value;
 let forceG = () => {
     let forceGvalue = document.getElementById("slide-Gforce");
     return forceGvalue.value;
@@ -26,5 +25,6 @@ let avgDelta = () => {
 
 let avgVel = () => {
     let diam = avgDiam().toFixed(2);
-    return (((((diam)/100) ** 2) * (rhoP - rhoS) * (9.81*1)) / (18 * mu))
+    return (((((diam)/100) ** 2) * (rhoP - rhoS) * (DEFAULT_GRAVITY*forceG())) / (18 * mu))
 }
+
