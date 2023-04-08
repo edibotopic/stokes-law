@@ -23,7 +23,7 @@ In the application the units for the physical quantities are taken to be:
 - Velocity ($m/s$)
 
 The default centrifugal force is $1$ (no centrifugation) meaning
-that acceleration due to gravity ($1 \times 9.81 m/s^2$) applies.
+that acceleration due to gravity ($1 \times 9.81 \ m/s^2$) applies.
 Applying a centrifugal force of $2$ will double this value.
 
 Note: the units can be viewed at any time by hovering over the sliders or
