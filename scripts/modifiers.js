@@ -1,6 +1,6 @@
 // Modify particle properties based on slider values
 
-modifiers = () => {
+let modifiers = () => {
   ballArray.forEach(ball => {
     let newRadius = document.getElementById("slide-radius").value;
     let newRhoP = document.getElementById("slide-rhoP").value;
