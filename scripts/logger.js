@@ -1,3 +1,4 @@
+"use strict";
 // Generate a dynamic line graph using D3.js
 
 let graphOn = 0

@@ -1,3 +1,4 @@
+"use strict";
 // Define particle class that will be used to spawn particle instances
 
 class Ball {

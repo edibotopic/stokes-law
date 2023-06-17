@@ -1,3 +1,4 @@
+"use strict";
 // Main entry point for application
 
 // Initialisation

@@ -1,3 +1,4 @@
+"use strict";
 // Define some useful constants
 
 // Colours

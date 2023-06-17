@@ -1,3 +1,4 @@
+"use strict";
 // Set variables for Stoke's Law and calculate some statistical information for the particle population
 
 let r = document.getElementById('slide-radius').value; // radius in mm

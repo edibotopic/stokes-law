@@ -1,3 +1,4 @@
+"use strict";
 // Modify particle properties based on slider values
 
 let modifiers = () => {

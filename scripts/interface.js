@@ -1,3 +1,4 @@
+"use strict";
 // Create interface of sliders and buttons
 
 // Define some constants for the sliders

@@ -1,3 +1,4 @@
+"use strict";
 // Create a resizable and restartable canvas for the animation
 
 const canvas = document.createElement('canvas');

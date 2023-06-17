@@ -1,3 +1,4 @@
+"use strict";
 // A modal window for explaining the application
 
 const linkEsc = `&lt;iframe

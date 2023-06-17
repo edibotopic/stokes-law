@@ -1,3 +1,4 @@
+"use strict";
 // Utility functions for randomisation
 
 // Generate random number within range

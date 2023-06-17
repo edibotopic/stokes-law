@@ -1,3 +1,4 @@
+"use strict";
 // Set total particles based on device size and thin numbers to reduce noise and increase performance
 
 let thinning = 30; // This value for thinning particle numbers was selected based on mobile performance (limiting case)
