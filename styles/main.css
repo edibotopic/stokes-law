@@ -281,10 +281,10 @@ input[type='range']::-moz-range-thumb {
 
 /* Statistical display */
 #stats {
-  width: 160px;
+  width: 175px;
   height: 75px;
-  right: 5px;
-  bottom: 80px;
+  right: 15px;
+  bottom: 86px;
   position: absolute;
   color: var(--white_bright);
   font-size: 11px;
