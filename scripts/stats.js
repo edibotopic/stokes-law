@@ -22,6 +22,7 @@ let statsPanel = () => {
       '<br>' +
       'Density difference = ' +
       delta +
+      ' kg m<sup>-3</sup>' +
       '<br>' +
       msg;
   } else if (data < -1.0) {
@@ -37,6 +38,7 @@ let statsPanel = () => {
       '<br>' +
       'Density difference = ' +
       delta +
+      ' kg m<sup>-3</sup>' +
       '<br>' +
       msg;
   } else if (data == 0.0) {
@@ -52,6 +54,7 @@ let statsPanel = () => {
       '<br>' +
       'Density difference = ' +
       delta +
+      ' kg m<sup>-3</sup>' +
       '<br>' +
       msg;
   } else if (data > 0.0 && data <= 1.0) {
@@ -67,6 +70,7 @@ let statsPanel = () => {
       '<br>' +
       'Density difference = ' +
       delta +
+      ' kg m<sup>-3</sup>' +
       '<br>' +
       msg;
   } else if (data < 0.0 && data >= -1.0) {
@@ -82,6 +86,7 @@ let statsPanel = () => {
       '<br>' +
       'Density difference = ' +
       delta +
+      ' kg m<sup>-3</sup>' +
       '<br>' +
       msg;
   }
