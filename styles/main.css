@@ -21,6 +21,7 @@ body {
   overflow: hidden;
   display: block;
   font-family: 'Helvetica', sans-serif;
+  color: var(--outlines);
 }
 
 /* Interface buttons */
