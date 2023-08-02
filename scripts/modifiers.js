@@ -15,7 +15,7 @@ let modifiers = () => {
     rhoS = newRhoS;
     mu = newVisc;
 
-    // velocity along the vertical (dy) axis for each particle instance is determined by Stoke's law
+    // velocity along the vertical (dy) axis for each particle instance is determined by Stokes' law
     ball.dy = (
         (
         (((ball.r * 2)) // convert radius to diameter

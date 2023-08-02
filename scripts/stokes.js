@@ -1,5 +1,5 @@
 "use strict";
-// Set variables for Stoke's Law and calculate some statistical information for the particle population
+// Set variables for Stokes' Law and calculate some statistical information for the particle population
 
 let r = document.getElementById('slide-radius').value; // radius in mm
 let rhoP = document.getElementById('slide-rhoP').value; // density in kg/m^3

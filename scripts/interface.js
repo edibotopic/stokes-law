@@ -90,7 +90,7 @@ const particlesInit = () => {
     let x = randomNoFromRange(padding, canvas.width - padding);
     let y = randomNoFromRange(padding, canvas.height - padding);
     let dx = randomNoFromRange(-1, 1) / 90; //particles drift slightly on x-axis even if no vertical motion
-    let dy = ((r * 2) ** 2 * (rhoP - rhoS) * g) / (emp * mu); //velocity along vertical axis determined by Stoke's Law
+    let dy = ((r * 2) ** 2 * (rhoP - rhoS) * g) / (emp * mu); //velocity along vertical axis determined by Stokes' Law
     let color = randomColor(COLOURS_PARTS); //colours of balls vary slightly to give illusion of depth
 
     ballArray.push(new Ball(x, y, dx, dy, r, color));

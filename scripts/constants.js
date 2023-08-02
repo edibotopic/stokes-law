@@ -10,7 +10,7 @@ const COLOURS_PARTS = [
   'rgba(356,213,50,0.9)',
 ]
 
-// Default physical values for Stoke's Law (NOTE: arbitrary)
+// Default physical values for Stokes' Law (NOTE: arbitrary)
 const DEFAULT_RADIUS = 10;
 const DEFAULT_RHO_P = 1050;
 const DEFAULT_RHO_S = 950;
@@ -18,7 +18,7 @@ const DEFAULT_GFORCE = 1;
 const DEFAULT_GRAVITY = 9.81;
 const DEFAULT_VISCOSITY = 10;
 
-// Empirical constant used in Stoke's Law
+// Empirical constant used in Stokes' Law
 const EMPIRICAL_CONSTANT = 18;
 
 // Value to slow down visual speed of particles
